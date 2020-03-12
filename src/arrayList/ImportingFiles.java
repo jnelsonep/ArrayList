@@ -19,16 +19,10 @@ public class ImportingFiles {
 		}
 		System.out.println(allWords);
 
-		//move each of the plural words to another file
+		// move each of the plural words to another file
 		
 		// remove all plural words
-		for (int i = 0; i < allWords.size(); i++) {
-		    String word = allWords.get(i);
-		    if (word.endsWith("s")) {
-		        allWords.remove(i);
-		        i--;
-		    }
-		}
+	
 		
 		//filter out the bad words, removing them if they contain parts of
 		//other bad words. Create another list of the bad words, and loop over them,
